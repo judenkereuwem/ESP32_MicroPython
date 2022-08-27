@@ -1,0 +1,13 @@
+
+1. Download MicroPython Firmware
+https://micropython.org/download/#esp32
+
+2. Flash MicroPython to ESP32
+pip install esptool
+
+3. Run on terminal
+esptool
+
+esptool --chip esp32 erase_flash
+
+esptool --chip esp32 --port COM9 write_flash -z 0x1000 esp32-20220618-v1.19.1.bin
